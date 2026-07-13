@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cosmic-bg text-cosmic-text;
+    background-image: radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.12), transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.1), transparent 40%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-gold-gradient bg-clip-text text-transparent;
+  }
+}
